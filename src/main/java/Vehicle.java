@@ -21,10 +21,10 @@ public class Vehicle {
     public static final int FLYING = 1;
 
     // this is initial vehicle setup
-    int Altitude= 8000;
-    int PrevAltitude= 8000;
+    int Altitude= 1000;
+    int PrevAltitude= 1000;
 
-    int Velocity= 1000;
+    int Velocity= 15;
     int Fuel = 12000;
     int Burn = 0;
     int Flying = FLYING;

@@ -1,3 +1,5 @@
+
+
 public class Simulation {
     public Vehicle vehicle;
 
@@ -48,7 +50,7 @@ public class Simulation {
 
     // main game loop
     public int runSimulation(BurnStream burnSource) {
-        DescentEvent status = null;
+        DescentEvent status = new DescentEvent(0, vehicle.Velocity, vehicle.Fuel, vehicle.Altitude, 0);
         int burnInterval = 0;
         printString(gameHeader());
         printString(getHeader());
