@@ -1,5 +1,5 @@
 public class Simulation {
-    private final Vehicle vehicle;
+    public Vehicle vehicle;
 
     public Simulation(Vehicle v) {
         this.vehicle = v;
@@ -13,7 +13,6 @@ public class Simulation {
         int r = (int)(Math.random() * (max - min)) + min;
         return (r % 15000 + 4000);
     }
-
 
     public String gameHeader() {
         String s = "";
@@ -73,9 +72,14 @@ public class Simulation {
     }
 
     public static void main(String[] args) {
+        Simulation game = new Simulation(new Vehicle(Simulation.randomaltitude()));
         // create a new Simulation object with a random starting altitude
+        BurnStream burnSource = new BurnInputStream();
         // create a new BurnInputStream
+        game.runSimulation(burnSource);
         // pass the new BurnInputStream to the runSimulation method
+
+
     }
 
 }
