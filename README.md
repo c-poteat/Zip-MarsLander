@@ -135,7 +135,7 @@ When at 50m, slow to 10m/s, then descend to 10m and slow to 2m/s.
 Then maintain speed and descend until you land.
 
 You may need to dig up some high school physics to figure this out.
-
+            velocity ve
 Hint: `a = (speed * speed)/(2 * altitude)`
 
 And remember, you brun zero kilos of fuel to increase descent speed by 100 m/s.

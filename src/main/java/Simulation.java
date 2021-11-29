@@ -10,10 +10,12 @@ public class Simulation {
     static String version = "2.0"; /* The Version of the program */
 
     public static int randomaltitude() {
-        int max = 1000;
-        int min = 1000;
+        int max = 20000;
+        int min = 10000;
         int r = (int)(Math.random() * (max - min)) + min;
-        return (r % 15000 + 4000);
+        return (r % 15000 + 4501);
+
+
     }
 
     public String gameHeader() {
@@ -76,10 +78,10 @@ public class Simulation {
     public static void main(String[] args) throws InterruptedException {
         Simulation game = new Simulation(new Vehicle(Simulation.randomaltitude()));
         // create a new Simulation object with a random starting altitude
-        BurnStream burnSource = new BurnInputStream();
-        OnBoardComputer onBoardComputer = new OnBoardComputer();
+        BurnStream burnSource = new BurnInputStream();  // Manual input
+        OnBoardComputer onBoardComputer = new OnBoardComputer();  // Auto input
         // create a new BurnInputStream
-        game.runSimulation(burnSource);
+        game.runSimulation(onBoardComputer);
         // pass the new BurnInputStream to the runSimulation method
 
 
