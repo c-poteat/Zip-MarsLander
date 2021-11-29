@@ -14,8 +14,6 @@ public class Simulation {
         int min = 10000;
         int r = (int)(Math.random() * (max - min)) + min;
         return (r % 15000 + 4501);
-
-
     }
 
     public String gameHeader() {
@@ -32,8 +30,8 @@ public class Simulation {
     public String getHeader() {
         String s = "";
         s = s + "\nTime\t";
-        s = s + "Velocity\t\t"; s = s + "Fuel\t\t";
-        s = s + "Altitude\t\t"; s = s + "Burn\n";
+        s = s + "Velocity\t"; s = s + "Fuel\t\t";
+        s = s + "Altitude\t"; s = s + "Burn\n";
         s = s + "----\t";
         s = s + "-----\t\t";
         s = s + "----\t\t";
@@ -73,7 +71,6 @@ public class Simulation {
         }
         return -1;
     }
-
     public static void main(String[] args) throws InterruptedException {
         Simulation game = new Simulation(new Vehicle(Simulation.randomaltitude()));
         // create a new Simulation object with a random starting altitude
@@ -83,7 +80,5 @@ public class Simulation {
         game.runSimulation(onBoardComputer);
         // pass the new BurnInputStream to the runSimulation method
 
-
     }
-
 }

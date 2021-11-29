@@ -5,10 +5,8 @@ public class Vehicle {
         PrevAltitude = InitialAltitude;
         // initialize the altitude AND previous altitude to initialAltitude
     }
-
     int Gravity = 100;
     /* The rate in which the spaceship descents in free fall (in ten seconds) */
-
     // Various end-of-game messages and status result codes.
     String dead = "\nCRASH!!\n\tThere were no survivors.\n\n";
     public static final int DEAD = -3;
@@ -16,14 +14,13 @@ public class Vehicle {
     public static final int CRASHED = -2;
     String emptyfuel = "\nThere is no fuel left. You're floating around like Major Tom.\n\n";
     public static final int EMPTYFUEL = -1;
-    String success = "\nYou made it! Good job!\n\n";
+    String success = "\nThe starship has landed, everyone is safe. Good job!\n\n";
     public static final int SUCCESS = 0;
     public static final int FLYING = 1;
 
     // this is initial vehicle setup
     int Altitude= 8000;
     int PrevAltitude= 8000;
-
     int Velocity= 1000;
     int Fuel = 12000;
     int Burn = 0;
