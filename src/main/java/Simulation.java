@@ -41,7 +41,6 @@ public class Simulation {
         return s;
     }
 
-
     public void printString(String string) {
 // print long strings with new lines the them.
     String[] a = string.split("\r?\n");
